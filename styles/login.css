@@ -1,0 +1,87 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: Arial;
+}
+#header{
+	background: #0A2A3B;
+    border-bottom: 5px solid #00a7e2;
+    overflow: auto;
+    padding: 10px 0;
+    width: 100%;
+}
+.header-container {
+    margin: 0 auto;
+    width: 100%;
+}
+.logo-left{
+	display: inline-block;
+}
+.login-container,.forget-container{
+	margin: 75px auto 50px;
+    width: 90%;
+	background-color: #fff;
+    border: 1px solid #cdcdcd;
+    border-radius: 6px;
+    box-shadow: 0 0 10px 10px #999;
+    padding: 20px;
+}
+.login-container h3{
+	margin: 15px 0;
+}
+.credentials-wrapper{
+	margin: 15px 0;
+	text-align: left;
+}
+.credentials-wrapper input{
+	border: 1px solid #ccc;
+	font-size: 16px;
+	padding: 4px 2px;
+	width: 100%;
+	margin-top:10px
+}
+.forget-pass{
+	text-decoration: none;
+	color: #0074BB;
+}
+.submit-button,.password-button{
+	background: #93ad32 none repeat scroll 0 0;
+    border: 1px solid #aaa;
+    color: #fff;
+    font-size: 16px;
+    padding: 2px 5px;
+    width: 120px;
+	margin-top: 20px;
+	cursor: pointer;
+	border-radius: 4px;
+}
+.forget-container p{
+	margin: 15px 0 25px;
+	color: #aaa;
+}
+.password-button{
+	padding: 5px 15px;
+	width: auto;
+}
+	
+@media screen and  (min-width:480px){
+	.credentials-wrapper{
+		margin: 15px 0;
+		text-align: center;
+	}
+	.credentials-wrapper input{
+		margin-left: 10px;
+		width: 180px;
+		margin-top: 0px;
+	}
+}
+
+@media screen and  (min-width:768px){
+	.header-container {
+		width: 80%;
+	}
+	.login-container,.forget-container{
+		width: 76%;
+	}
+}
