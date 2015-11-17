@@ -1,0 +1,22 @@
+{
+  "name": "reactified",
+  "version": "0.0.1",
+  "description": "Classified in reactjs - POC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify index.js -o scripts/bundle.js -t [ babelify --presets [ es2015 react ] ]"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "live-server": "~0.8.2",
+    "babel-core": "~6.1.2",
+    "browserify": "~12.0.1",
+    "babelify": "~7.2.0"
+  },
+  "dependencies": {
+    "react": "~0.14.2",
+    "react-dom": "~0.14.2"
+  }
+}
