@@ -6,7 +6,6 @@ class MainNav extends React.Component {
             <nav className="main-nav">
                 <a href="#">Dash Board</a>
                 <a href="#">Login</a>
-                <a href="#">Forget password</a>
             </nav>
         );
     }
