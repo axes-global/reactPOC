@@ -7,7 +7,7 @@ class LoginPanel extends React.Component {
             <div className="login-container">
                 <h1>Welcome Techaspectians</h1>
                 <h3>Identify yourself before continue</h3>
-                 <form>
+                 <form class="login-form">
                     <div className="credentials-wrapper">
                         <label>Username</label>
                         <input type="text" name="Username" placeholder="Username"/>

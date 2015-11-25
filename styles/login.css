@@ -17,6 +17,25 @@
 }
 .logo-left{
 	display: inline-block;
+    float: left;
+    width: 48%;
+}
+.logo-left img{
+    width: 100%;
+}
+.main-nav {
+    float: right;
+    margin-left: 4%;
+    margin-top: 17px;
+    text-align: right;
+    width: 48%;
+}
+.main-nav > a {
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 14px;
+    text-decoration: none;
+    color: #fff;
 }
 .login-container,.forget-container{
 	margin: 75px auto 50px;
@@ -27,8 +46,14 @@
     box-shadow: 0 0 10px 10px #999;
     padding: 20px;
 }
+.login-container h1,h3{
+    text-align: center;
+}
 .login-container h3{
 	margin: 15px 0;
+}
+.login-form{
+    text-align: center;
 }
 .credentials-wrapper{
 	margin: 15px 0;
@@ -41,10 +66,6 @@
 	width: 100%;
 	margin-top:10px
 }
-.forget-pass{
-	text-decoration: none;
-	color: #0074BB;
-}
 .submit-button,.password-button{
 	background: #93ad32 none repeat scroll 0 0;
     border: 1px solid #aaa;
@@ -56,6 +77,15 @@
 	cursor: pointer;
 	border-radius: 4px;
 }
+.login-nav {
+    margin-top: 25px;
+    text-align: center;
+}
+.login-nav a {
+    color: #0074bb;
+    margin-right: 10px;
+    text-decoration: none;
+}
 .forget-container p{
 	margin: 15px 0 25px;
 	color: #aaa;
@@ -66,7 +96,10 @@
 }
 	
 @media screen and  (min-width:480px){
-	.credentials-wrapper{
+	.main-nav {
+        margin-top: 30px;
+    }
+    .credentials-wrapper{
 		margin: 15px 0;
 		text-align: center;
 	}
@@ -77,6 +110,14 @@
 	}
 }
 
+@media screen and  (min-width:600px){
+    .main-nav {
+        margin-top: 43px;
+    }
+    .logo-left img{
+        width: auto;
+    }
+}
 @media screen and  (min-width:768px){
 	.header-container {
 		width: 80%;
