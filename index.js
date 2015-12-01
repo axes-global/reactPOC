@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import MyHeader from './screens/App/screens/shared/components/header';
 import LoginPanel from './screens/App/screens/login/components/login';
+import ComponentPanel from './screens/App/screens/list/components/list';
 
 class App extends React.Component {
     render() {
