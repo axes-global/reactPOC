@@ -37,7 +37,7 @@
     text-decoration: none;
     color: #fff;
 }
-.login-container,.forget-container,.components-container{
+.login-container,.forget-container,.components-list-container{
 	margin: 75px auto 50px;
     width: 90%;
 	background-color: #fff;
@@ -94,31 +94,31 @@
 	padding: 5px 15px;
 	width: auto;
 }
-.components-heading {
+.components-list-heading {
     list-style: outside none none;
 }
-.components-heading li {
+.components-list-heading li {
     padding: 10px;
 }
-.components-heading li:nth-child(2n-1) {
+.components-list-heading li:nth-child(2n-1) {
     background: #fff;
 }
-.components-heading li:nth-child(2n) {
+.components-list-heading li:nth-child(2n) {
     background: #dceff6;
 }
-.components-heading li:first-child {
+.components-list-heading li:first-child {
     background: #3995ba;
     color: #fff;
     border-radius: 5px;
     display: none;
 }
-.components-heading li div {
+.components-list-heading li div {
     word-wrap: break-word;
 }
-.components-heading li:first-child div{
+.components-list-heading li:first-child div{
     border-right: 1px solid #fff;
 }
-.components-heading li:first-child div:last-child{
+.components-list-heading li:first-child div:last-child{
     border-right: none;
 }
 @media screen and  (min-width:480px){
@@ -148,22 +148,22 @@
 	.header-container {
 		width: 80%;
 	}
-	.login-container,.forget-container,.components-container{
+	.login-container,.forget-container,.components-list-container{
 		width: 76%;
 	}
-    .components-heading {
+    .components-list-heading {
         overflow: hidden;
     }
-    .components-heading li{
+    .components-list-heading li{
         float: left;
         width: 100%;	
         color: #000;
         padding: 0px;
     }
-    .components-heading li:first-child {
+    .components-list-heading li:first-child {
         display: block;
     }
-    .components-heading li div {
+    .components-list-heading li div {
         float: left;
         padding: 10px;
         width: 25%;
