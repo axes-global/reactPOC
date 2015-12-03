@@ -5,6 +5,7 @@ import MyHeader from './screens/App/screens/shared/components/header';
 import LoginPanel from './screens/App/screens/login/components/login';
 import SignUp from './screens/App/screens/login/components/SignUp';
 import ForgetPassword from './screens/App/screens/login/components/ForgetPassword';
+import AddList from './screens/App/screens/list/components/list';
 
 class App extends React.Component {
     render() {
@@ -35,4 +36,3 @@ ReactDOM.render((
     ),
     document.body
 );
-
