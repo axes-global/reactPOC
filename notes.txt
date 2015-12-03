@@ -8,6 +8,8 @@ npm install --save-dev browserify
 $ npm install --save-dev babelify
 npm install babel-preset-es2015
 npm install babel-preset-react
+npm install --save history
+npm install --save react-router@latest
 browserify script.js -o bundle.js -t [ babelify --presets [ es2015 react ] ]
 npm install --save-dev watch
 

@@ -1,7 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Router, Route } from 'react-router';
 import MyHeader from './screens/App/screens/shared/components/header';
 import LoginPanel from './screens/App/screens/login/components/login';
+import SignUp from './screens/App/screens/login/components/SignUp';
+import ForgetPassword from './screens/App/screens/login/components/ForgetPassword';
 
 class App extends React.Component {
     render() {
@@ -22,5 +25,14 @@ class App extends React.Component {
 
 export default App;
 
-ReactDOM.render(<App />, document.querySelector('body'));
+ReactDOM.render((
+        <Router>
+            <Route path="/" component={App}>
+                <Route path="signup" component={SignUp}/>
+                <Route path="forget" component={ForgetPassword}/>
+            </Route>
+        </Router>
+    ),
+    document.body
+);
 

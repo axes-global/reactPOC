@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 class LoginMenu extends React.Component {
     render() {
         return (
             <nav className="login-nav">
-                <a href="#">Forget Password</a>
-                <a href="#">Sign up</a>
+                <Link to="/forget">Forget Password</Link>
+                <Link to="/signup">Sign up</Link>
             </nav>
         )
     }
