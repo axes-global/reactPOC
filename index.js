@@ -29,8 +29,8 @@ export default App;
 ReactDOM.render((
         <Router>
             <Route path="/" component={App}>
-                <Route path="signup" component={SignUp}/>
-                <Route path="forget" component={ForgetPassword}/>
+                <Route path="./signup" component={SignUp}/>
+                <Route path="./forget" component={ForgetPassword}/>
             </Route>
         </Router>
     ),
