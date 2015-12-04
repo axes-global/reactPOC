@@ -35,4 +35,4 @@ ReactDOM.render((
         </Router>
     ),
     document.body
-);
+)
