@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { render } from 'react-dom'
 import { Router, Route, Link } from 'react-router';
 import MyHeader from './screens/App/screens/shared/components/header';
 import LoginPanel from './screens/App/screens/login/components/login';
