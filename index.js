@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import { render } from 'react-dom';
 import { Router, Route, Link } from 'react-router';
 import MyHeader from './screens/App/screens/shared/components/header';
-import LoginPanel from './screens/App/screens/login/components/login';
-import SignUp from './screens/App/screens/login/components/SignUp';
-import ForgetPassword from './screens/App/screens/login/components/ForgetPassword';
+import Login from './screens/App/screens/login/components/login';
+import SignUp from './screens/App/screens/signup/components/SignUp';
+import ForgetPassword from './screens/App/screens/forgetpassword/components/ForgetPassword';
 import AddList from './screens/App/screens/list/components/list';
 
 class App extends React.Component {
@@ -14,12 +14,8 @@ class App extends React.Component {
             <div className="app">
                 <header id="header">
                     <MyHeader />
-
                 </header>
-                
-                <div id="login-panel" align="center">
-                    <LoginPanel />
-                </div>
+                {this.props.children}
             </div>
         );
     }
@@ -30,6 +26,7 @@ export default App;
 ReactDOM.render((
         <Router>
             <Route path="/" component={App}>
+                <Route path="login" component={Login}/>
                 <Route path="signup" component={SignUp}/>
                 <Route path="forget" component={ForgetPassword}/>
             </Route>

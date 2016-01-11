@@ -21,7 +21,11 @@ http://facebook.github.io/react/blog/2015/09/02/new-react-developer-tools.html
 https://github.com/btholt/es6-react-pres
 https://gist.github.com/ryanflorence/daafb1e3cb8ad740b346
 http://andrewcallahan.com/towards-a-simpler-react-folder-structure/
+<<<<<<< HEAD
 https://github.com/facebook/react/wiki/Complementary-Tools
+=======
+https://24ways.org/2015/universal-react
+>>>>>>> 26be3ae... rajakvk: router issue fixed, restructured folders/files
 
 node
 npm

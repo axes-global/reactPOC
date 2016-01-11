@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 class MainNav extends React.Component {
     render() {
         return (
             <nav className="main-nav">
-                <a href="#">Dash Board</a>
-                <a href="#">Login</a>
+                <Link to="/">Dash Board</Link>
+                <Link to="/login">Login</Link>
             </nav>
         );
     }
