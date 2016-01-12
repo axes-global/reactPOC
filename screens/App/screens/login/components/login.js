@@ -13,17 +13,17 @@ class LoginPanel extends React.Component {
                             <label>Username</label>
                             <span>
                                 <i className="fa fa-user"></i>
-                                <input type="text" name="Username" placeholder="Username"/>
+                                <input type="text" name="Username" placeholder="Username" required/>
                             </span>
                         </div>
                         <div className="credentials-wrapper">
                             <label>Password</label>
                             <span>
                                 <i className="fa fa-key"></i>
-                                <input type="password" name="password" placeholder="Password"/>
+                                <input type="password" name="password" placeholder="Password" required/>
                             </span>
                         </div>
-                        <input type="button" value="Submit" className="submit-button"/>
+                        <input type="submit" value="Submit" className="submit-button"/>
                     </form>
                     <LoginMenu />
                 </div>
