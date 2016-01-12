@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { render } from 'react-dom';
 import { Router, Route, Link } from 'react-router';
 import MyHeader from './screens/App/screens/shared/components/header';
+import MyFooter from './screens/App/screens/shared/components/footer';
 import Login from './screens/App/screens/login/components/login';
 import SignUp from './screens/App/screens/signup/components/SignUp';
 import ForgetPassword from './screens/App/screens/forgetpassword/components/ForgetPassword';
@@ -16,6 +17,9 @@ class App extends React.Component {
                     <MyHeader />
                 </header>
                 {this.props.children}
+                <footer id="footer">
+                    <MyFooter/>
+                </footer>
             </div>
         );
     }
