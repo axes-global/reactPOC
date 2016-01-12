@@ -17,7 +17,7 @@ class SignUp extends React.Component {
 	            	<label>E-mail Address</label>
 	                <span>
  						<i className="fa fa-envelope"></i>
-  						<input type="email" data-reactid=".0.1.1.1.1" placeholder="E-mail Address" name="email"/>
+  						<input type="email" placeholder="E-mail Address" name="email"/>
   					</span>
 	            </div>
 	            <div className="credentials-wrapper">
