@@ -5,7 +5,8 @@ class MainNav extends React.Component {
     render() {
         return (
             <nav className="main-nav">
-                <Link to="/">Dash Board</Link>
+                <Link to="/">Home</Link>
+                <Link to="/list">List</Link>
                 <Link to="/login">Login</Link>
             </nav>
         );

@@ -26,6 +26,7 @@ export default App;
 ReactDOM.render((
         <Router>
             <Route path="/" component={App}>
+                <Route path="list" component={AddList}/>
                 <Route path="login" component={Login}/>
                 <Route path="signup" component={SignUp}/>
                 <Route path="forget" component={ForgetPassword}/>
