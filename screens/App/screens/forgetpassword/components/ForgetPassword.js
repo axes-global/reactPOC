@@ -10,10 +10,10 @@ class ForgetPassword extends React.Component {
                         <label>Enter your Email</label>
                         <span>
                             <i className="fa fa-envelope"></i>
-                            <input type="email" placeholder="E-mail Address" name="email"/>
+                            <input type="email" placeholder="E-mail Address" name="email" required/>
                         </span>
                     </div>
-                    <input type="button" value="Email new password" className="password-button"/>
+                    <input type="submit" value="Email new password" className="password-button"/>
                 </form>
             </div>
         )
