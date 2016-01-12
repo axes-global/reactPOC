@@ -4,12 +4,19 @@
 	box-sizing: border-box;
 	font-family: Arial;
 }
-#header{
+#header,#footer{
 	background: #0A2A3B;
     border-bottom: 5px solid #00a7e2;
     overflow: auto;
     padding: 10px 0;
     width: 100%;
+}
+#footer {
+    color: #fff;
+    text-align: center;
+}
+#footer .footer-container a {
+    color: #93ad32;
 }
 .header-container {
     margin: 0 auto;
