@@ -5,10 +5,13 @@ class ForgetPassword extends React.Component {
         return (
             <div className="forget-container">
                 <p>Just enter your valid email and we will send you a new passowrd.</p>
-                <form>
+                <form className="forget-form">
                     <div className="credentials-wrapper">
                         <label>Enter your Email</label>
-                        <input type="name" placeholder="Email"/>
+                        <span>
+                            <i className="fa fa-envelope"></i>
+                            <input type="email" placeholder="E-mail Address" name="email"/>
+                        </span>
                     </div>
                     <input type="button" value="Email new password" className="password-button"/>
                 </form>
