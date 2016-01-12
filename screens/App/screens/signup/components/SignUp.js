@@ -10,24 +10,24 @@ class SignUp extends React.Component {
 	            	<label>Username</label>
 	                <span>
 					  <i className="fa fa-user"></i>
-					  <input type="text" name="Username" placeholder="Username"/>
+					  <input type="text" name="Username" placeholder="Username" required/>
 					</span>
 	            </div>    
 	            <div className="credentials-wrapper">
 	            	<label>E-mail Address</label>
 	                <span>
  						<i className="fa fa-envelope"></i>
-  						<input type="email" placeholder="E-mail Address" name="email"/>
+  						<input type="email" placeholder="E-mail Address" name="email" required/>
   					</span>
 	            </div>
 	            <div className="credentials-wrapper">
 	            	<label>Password</label>
 	                <span>
 						<i className="fa fa-key"></i>
-						<input type="password" name="password" placeholder="Password"/>
+						<input type="password" name="password" placeholder="Password" required/>
 					</span>
 	            </div>
-	            <input type="button" value="Sign Up" className="signup-button"/>
+	            <input type="submit" value="Sign Up" className="signup-button"/>
             </form>
             </div>
         )
