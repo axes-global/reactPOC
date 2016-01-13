@@ -17,6 +17,7 @@ class App extends React.Component {
                     <MyHeader />
                 </header>
                 {this.props.children}
+                <div className="footer-space">&nbsp;</div>
                 <footer id="footer">
                     <MyFooter/>
                 </footer>
