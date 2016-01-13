@@ -10,14 +10,14 @@ class LoginPanel extends React.Component {
                     <h3>Identify yourself before continue</h3>
                      <form className="login-form">
                         <div className="credentials-wrapper">
-                            <label>Username</label>
+                            <label>Username<span className="required">*</span></label>
                             <span>
                                 <i className="fa fa-user"></i>
                                 <input type="text" name="Username" placeholder="Username" required/>
                             </span>
                         </div>
                         <div className="credentials-wrapper">
-                            <label>Password</label>
+                            <label>Password<span className="required">*</span></label>
                             <span>
                                 <i className="fa fa-key"></i>
                                 <input type="password" name="password" placeholder="Password" required/>
