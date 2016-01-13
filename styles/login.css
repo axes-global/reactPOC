@@ -58,7 +58,7 @@ html,body {
     text-decoration: none;
     color: #fff;
 }
-.login-container,.forget-container,.components-list-container,.signup-container{
+.login-container,.forget-container,.components-list-container,.signup-container,.postad-container{
 	margin: 75px auto 50px;
     width: 90%;
 	background-color: #fff;
@@ -67,27 +67,33 @@ html,body {
     box-shadow: 0 0 10px 10px #999;
     padding: 20px;
 }
-.login-container h1,h3,.signup-container h1{
+.login-container h1,h3,.signup-container h1,.postad-container h1{
     text-align: center;
 }
 .login-container h3{
 	margin: 15px 0;
 }
-.login-form,.signup-form,.forget-form{
+.login-form,.signup-form,.forget-form,.postad-form{
     text-align: center;
 }
 .credentials-wrapper{
 	margin: 15px 0;
 	text-align: left;
 }
-.credentials-wrapper input{
+.credentials-wrapper span.required {
+    color: #D54937;
+}
+.credentials-wrapper input,.postad-form .credentials-wrapper textarea{
 	border: 1px solid #ccc;
 	font-size: 16px;
 	padding: 4px 2px;
 	width: 100%;
 	margin-top:10px
 }
-.submit-button,.password-button,.signup-button{
+.postad-form .credentials-wrapper:nth-child(3) input {
+    border: none;
+}
+.submit-button,.password-button,.signup-button,.postad-button{
 	background: #93ad32 none repeat scroll 0 0;
     border: 1px solid #aaa;
     color: #fff;
@@ -144,7 +150,7 @@ html,body {
     border-right: none;
 }
 .signup-form span,.login-form span,.forget-form span {
-    display: block;
+    display: inline-block;
     position: relative;
 }
 .signup-form span .fa,.login-form span .fa,.forget-form span .fa {
@@ -159,19 +165,28 @@ html,body {
 	.main-nav {
         margin-top: 30px;
     }
-    .credentials-wrapper{
+    /*.credentials-wrapper{
 		margin: 15px 0;
 		text-align: center;
-	}
-	.credentials-wrapper input{
+	}*/
+	/*.credentials-wrapper input{
 		margin-left: 10px;
 		width: 180px;
 		margin-top: 0px;
-	}
-    .signup-form label {
+	}*/
+    .postad-form .credentials-wrapper textarea,.postad-form .credentials-wrapper input {
+        width: 300px;
+        /*margin-left: 10px;*/
+        margin-top: 0px;
+    }
+    .signup-form label,.postad-form label {
         display: inline-block;
         text-align: left;
-        width: 114px;
+        width: 116px;
+    }
+    .postad-form label {
+        vertical-align: top;
+        margin-top: 10px;
     }
 }
 
@@ -182,12 +197,21 @@ html,body {
     .logo-left img{
         width: auto;
     }
+   /* .credentials-wrapper{
+        margin: 15px 0;
+        text-align: center;
+    }
+    .credentials-wrapper input{
+        margin-left: 10px;
+        width: 180px;
+        margin-top: 0px;
+    }*/
 }
 @media screen and  (min-width:768px){
 	.header-container {
 		width: 80%;
 	}
-	.login-container,.forget-container,.components-list-container,.signup-container{
+	.login-container,.forget-container,.components-list-container,.signup-container,.postad-container{
 		width: 76%;
 	}
     .components-list-heading {
@@ -214,4 +238,15 @@ html,body {
         top: 6px;
         left: 15px;
     }
+    .credentials-wrapper {
+        text-align: center;
+    }
+    .credentials-wrapper input{
+        margin-left: 10px;
+        width: 180px;
+        margin-top: 0px;
+    }
+     .postad-form .credentials-wrapper textarea,.postad-form .credentials-wrapper input {
+        margin-left: 10px;
+     }
 }
