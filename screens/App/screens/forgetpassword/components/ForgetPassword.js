@@ -7,7 +7,7 @@ class ForgetPassword extends React.Component {
                 <p>Just enter your valid email and we will send you a new passowrd.</p>
                 <form className="forget-form">
                     <div className="credentials-wrapper">
-                        <label>Enter your Email</label>
+                        <label>Enter your Email<span className="required">*</span></label>
                         <span>
                             <i className="fa fa-envelope"></i>
                             <input type="email" placeholder="E-mail Address" name="email" required/>
