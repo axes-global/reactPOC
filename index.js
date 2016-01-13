@@ -8,6 +8,7 @@ import Login from './screens/App/screens/login/components/login';
 import SignUp from './screens/App/screens/signup/components/SignUp';
 import ForgetPassword from './screens/App/screens/forgetpassword/components/ForgetPassword';
 import AddList from './screens/App/screens/list/components/list';
+import PostAd from './screens/App/screens/postad/components/postad';
 
 class App extends React.Component {
     render() {
@@ -35,6 +36,7 @@ ReactDOM.render((
                 <Route path="login" component={Login}/>
                 <Route path="signup" component={SignUp}/>
                 <Route path="forget" component={ForgetPassword}/>
+                <Route path="postad" component={PostAd}/>
             </Route>
         </Router>
     ),
