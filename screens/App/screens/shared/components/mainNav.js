@@ -8,6 +8,7 @@ class MainNav extends React.Component {
                 <Link to="/">Home</Link>
                 <Link to="/list">List</Link>
                 <Link to="/login">Login</Link>
+                <Link to="/postad">PostAd</Link>
             </nav>
         );
     }
