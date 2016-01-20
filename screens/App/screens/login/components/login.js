@@ -23,6 +23,7 @@ class LoginPanel extends React.Component {
                                 <input type="password" name="password" placeholder="Password" required/>
                             </span>
                         </div>
+                        <div className="error-msg">Incorrect Credentials</div>
                         <input type="submit" value="Submit" className="submit-button"/>
                     </form>
                     <LoginMenu />
