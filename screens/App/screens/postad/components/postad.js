@@ -18,6 +18,7 @@ class PostAd extends React.Component {
 	            	<label>Browse</label>
 						<input type="file" name="password" placeholder="Password" />
 	            </div>
+	            <div className="msg-postad">Your ad has been successfully posted !!</div>
 	            <input type="submit" value="Post Ad" className="postad-button"/>
             </form>
             </div>
