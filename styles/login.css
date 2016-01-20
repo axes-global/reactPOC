@@ -32,6 +32,14 @@ html,body {
 #footer .footer-container a {
     color: #93ad32;
 }
+.error-msg,.forget-form .msg-resetpass-error {
+    color: #d54937;
+    display: none;
+}
+.forget-form .msg-resetpass,.signup-form .msg-subscribe,.postad-form .msg-postad {
+    color: #00A7E2;
+    display: none;
+}
 .header-container {
     margin: 0 auto;
     width: 100%;
@@ -67,7 +75,7 @@ html,body {
     box-shadow: 0 0 10px 10px #999;
     padding: 20px;
 }
-.login-container h1,h3,.signup-container h1,.postad-container h1{
+.login-container h1,h3,.signup-container h1,.postad-container h1,.forget-container h1{
     text-align: center;
 }
 .login-container h3{
@@ -159,7 +167,7 @@ html,body {
     left: 5px;
 }
 .signup-form .credentials-wrapper input,.login-form .credentials-wrapper input,.forget-form .credentials-wrapper input {
-    text-indent: 25px;
+    padding-left: 25px;
 }
 @media screen and  (min-width:480px){
 	.main-nav {
