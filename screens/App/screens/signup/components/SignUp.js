@@ -27,6 +27,7 @@ class SignUp extends React.Component {
 						<input type="password" name="password" placeholder="Password" required/>
 					</span>
 	            </div>
+	            <div className="msg-subscribe">You have been successfully subscribed !!</div>
 	            <input type="submit" value="Sign Up" className="signup-button"/>
             </form>
             </div>
