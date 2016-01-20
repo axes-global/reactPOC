@@ -14,6 +14,8 @@ class ForgetPassword extends React.Component {
                             <input type="email" placeholder="E-mail Address" name="email" required/>
                         </span>
                     </div>
+                    <div className="msg-resetpass">Your new password has been successfully sent to your registered email id !!</div>
+                    <div className="msg-resetpass-error">Email id is incorrect !!</div>
                     <input type="submit" value="Email new password" className="password-button"/>
                 </form>
             </div>
