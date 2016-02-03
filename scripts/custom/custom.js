@@ -1,20 +1,56 @@
+// fetching from local storage
+var c = new Backbone.Collection();
+c.localStorage = new Backbone.LocalStorage("credentials");
+c.fetch();
+
+// for sign up
+$('.app').on('submit', '.signup-form', function() {
+    var subscribe = $.mockjax({
+        url: "subscribe",
+        responseTime: 1000,
+        responseText: "Subscribe"
+    });
+
+    $.ajax({
+        url: "subscribe",
+        success: function(response) {
+            $(".signup-form .msg-subscribe").css('display', 'block');
+        },
+        error: function(response) {
+            $(".signup-form .msg-subscribe").css('display', 'none');
+        }
+    }).done(function(response) {
+        $.mockjax.clear(subscribe);
+    });
+    return false;
+});
+// for login in 
 $('.app').on('submit', '.login-form', function() {
+    var username, password, email,userId,passId;
+    username = c.pluck('username');
+    password = c.pluck('password');
+    // for matching user entered email and password with the one stored in storage and passing them to ajax request
+    for (var i = 0; i < username.length; i++) {
+        if (($('input[name=Username]').val() == username[i]) && ($('input[name=password]').val() == password[i])) {
+            userId = username[i];
+            passId = password[i];
+        }
+    }
     var login = $.mockjax({
         url: "login",
         responseTime: 1000,
         responseText: "Credentials Matched",
         data: {
-            username: 'rahul',
-            password: 'test'
+            userval: userId,
+            passval: passId
         }
     });
 
     $.ajax({
-
         url: "login",
         data: {
-            username: $('input[name=Username]').val(),
-            password: $('input[name=password]').val()
+            userval: $('input[name=Username]').val(),
+            passval: $('input[name=password]').val()
         },
         success: function(response) {
             window.location.href = '/#/list';
@@ -27,23 +63,31 @@ $('.app').on('submit', '.login-form', function() {
     }).done(function(response) {
         $.mockjax.clear(login);
     });
+
     return false;
 });
+// for forget password
 $('.app').on('submit', '.forget-container', function() {
+    var username, password, email;
+    email = c.pluck('email');
+    // for matching user entered email with the one stored in storage
+    for (var i = 0; i < email.length; i++) {
+        if (($('input[name=email]').val() == email[i])) {
+            emaildata = email[i]
+        }
+    }
     var resetpass = $.mockjax({
         url: "reset",
         responseTime: 1000,
         responseText: "Password Reset",
         data: {
-            email: 'rahulv@techaspect.com'
+            id: emaildata
         }
     });
-
     $.ajax({
-
         url: "reset",
         data: {
-            email: $('input[name=email]').val()
+            id: $('input[name=email]').val()
         },
         success: function(response) {
             $(".forget-container .msg-resetpass").css('display', 'block');
@@ -58,27 +102,7 @@ $('.app').on('submit', '.forget-container', function() {
     });
     return false;
 });
-$('.app').on('submit', '.signup-form', function() {
-    var subscribe = $.mockjax({
-        url: "subscribe",
-        responseTime: 1000,
-        responseText: "Subscribe"
-    });
-
-    $.ajax({
-
-        url: "subscribe",
-        success: function(response) {
-            $(".signup-form .msg-subscribe").css('display', 'block');
-        },
-        error: function(response) {
-            $(".signup-form .msg-subscribe").css('display', 'none');
-        }
-    }).done(function(response) {
-        $.mockjax.clear(subscribe);
-    });
-    return false;
-});
+// for post-ad 
 $('.app').on('submit', '.postad-form', function() {
     var postad = $.mockjax({
         url: "postad",
