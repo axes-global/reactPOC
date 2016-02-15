@@ -68,7 +68,7 @@ $('.app').on('submit', '.login-form', function() {
 });
 // for forget password
 $('.app').on('submit', '.forget-container', function() {
-    var username, password, email;
+    var username, password, email,emaildata;
     email = c.pluck('email');
     // for matching user entered email with the one stored in storage
     for (var i = 0; i < email.length; i++) {
