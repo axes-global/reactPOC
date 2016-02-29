@@ -4,7 +4,7 @@ class ForgetPassword extends React.Component {
     render() {
         return (
             <div className="forget-container">
-                <h1>Retrive your password</h1>
+                <h1>Retreive your password</h1>
                 <p>Just enter your valid email and we will send you a new passowrd.</p>
                 <form className="forget-form">
                     <div className="credentials-wrapper">
