@@ -1,10 +1,11 @@
 // fetching from local storage
 var c = new Backbone.Collection();
-c.localStorage = new Backbone.LocalStorage("credentials");
-c.fetch();
+
 
 // for sign up
 $('.app').on('submit', '.signup-form', function() {
+    c.localStorage = new Backbone.LocalStorage("credentials");
+    c.fetch();
     var subscribe = $.mockjax({
         url: "subscribe",
         responseTime: 1000,
@@ -26,7 +27,9 @@ $('.app').on('submit', '.signup-form', function() {
 });
 // for login in 
 $('.app').on('submit', '.login-form', function() {
-    var username, password, email,userId,passId;
+    c.localStorage = new Backbone.LocalStorage("credentials");
+    c.fetch();
+    var username, password, email, userId, passId;
     username = c.pluck('username');
     password = c.pluck('password');
     // for matching user entered email and password with the one stored in storage and passing them to ajax request
@@ -68,7 +71,9 @@ $('.app').on('submit', '.login-form', function() {
 });
 // for forget password
 $('.app').on('submit', '.forget-container', function() {
-    var username, password, email,emaildata;
+    c.localStorage = new Backbone.LocalStorage("credentials");
+    c.fetch();
+    var username, password, email, emaildata;
     email = c.pluck('email');
     // for matching user entered email with the one stored in storage
     for (var i = 0; i < email.length; i++) {
